@@ -42,6 +42,11 @@ client.connect(err => {
         res.send(documents[0])
     })
   })
+  app.get('/', (req, res) => {
+  
+        res.send("Its working")
+   
+  })
 
   app.post('/productsByKeys', (req, res) => {
     const productKeys = req.body;
